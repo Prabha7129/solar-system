@@ -1,118 +1,154 @@
 body{
     background-color: aqua;
-    padding: 10px;
+    padding: 200px;
     background-image:url(https://solars-systems.netlify.app/images/stars.webp );
     background-repeat: no-repeat;
     background-size: cover;
     
 }
 #Neptune{
- border: 1px solid white;
- height: 1000px;
- width: 1000px;
- border-radius: 50%;
- 
+    position: relative;
+    margin-top: 50px;
+    border: 1px solid white;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    animation: rotate 20s linear infinite;
 }
 #Neptune-pic{
+    position:absolute;
     border-radius: 50%;
     height: 90px;
     width: 90px;
     margin-top: -50px;
+    
 }
 #uranus{
+    margin-top: 50px;
+    position: relative;
     border: 1px solid white;
     height: 900px;
     width: 900px;
     border-radius: 50%;
-    margin-top: 3px;
+    animation: rotate 18s linear infinite;
 
 }
 #uranus-pic{
+    position: absolute;
     margin-left: 745px;
     border-radius: 50%;
     height: 90px;
     width: 90px;
-    margin-top: 150px;
+    left: -630px;
+    top: 60px;
 }
 #saturn{
+    margin-top: 50px; 
+    position: relative;
     border: 1px solid rgb(241, 239, 239);
     height: 800px;
     width: 800px;
     border-radius: 50%;
-    margin-top: -200px;
+    animation: rotate 17s linear infinite;
 }
 #saturn-pic{
-    margin-left: -95%;
-    margin-top:400px ;
+    position: absolute;
+    left: 680px;
+    margin-top:300px ;
     height: 30%;
     width: 30%;
 }
 #jupiter{
+    position: relative;
     border: 1px solid rgb(212, 207, 207);
     height: 700px;
     width: 700px;
     border-radius: 50%;
-    margin-top:-600px;
+    margin-top:50px;
+    animation: rotate 16s linear infinite;
 }
 #jupiter-pic{
+    position: absolute;
     height:16%;
     width: 16%;
-    margin-top: 86%;
-    margin-left: 50%;
+    top: 78%;
+    left:50px
 }
 #mars{
+    position: relative;
     border: 1px solid white;
     height: 600px;
     width: 600px;
     border-radius: 50%;
-    margin-top: -95%;
+    margin-top: 50px;
+    animation: rotate 15s linear infinite;
 }
 #mars-pic{
+    position: absolute;
     height: 13%;
     width: 13%;
-    margin-top: 90%;
-    margin-right: 40%;
+    top: 93%;
+    right: 40%;
 }
 #earth{
+    position: relative;
     border: 1px solid white;
     height: 500px;
     width: 500px;
     border-radius: 50%;
-    margin-top: -95%;
+    margin-top:50px;
+    animation: rotate 12s linear infinite;
 }
 #earth-pic{
+    position: absolute;
     height: 20%;
     width: 20%;
-    margin-top: -10%;
+    top: -9%;
 }
 #venus{
+    margin-top: 50px;
+    position: relative;
     border: 1px solid white;
     height: 400px;
     width: 400px;
     border-radius: 50%;
+    animation: rotate 10s linear infinite;
 }
 #venus-pic{
+    position: absolute;
     height: 20%;
     width: 20%;
-    margin-right:-100% ;
-    margin-top: 43%;
+    right:102% ;
+    top: 43%;
+    left: 90%;
 }
 #mercury{
+
+    position: relative;
     border: 1px solid white;
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    margin-top: -51%;
+    margin-top: 50px;
+    animation: rotate 8s linear infinite;
 }
 #mercury-pic{
+    position: absolute;
     height: 20%;
     width: 20%;
-    margin-bottom: -60%;
-    margin-left: -100%;
+    top: 60%;
+    left: -5%;
 }
 #sun-pic{
+    position: absolute;
     border-radius: 50%;
     height: 80%;
     width: 80%;
-    margin-top: 4%;
+    top: 10%;
+    left: 10%;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
 }
